@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://guildrun.site/sitemap.xml
