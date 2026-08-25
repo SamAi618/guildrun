@@ -29,6 +29,8 @@ INDEXABLE_ROUTES = {
     "/classes/",
     "/classes/upgrades/",
     "/demo/",
+    "/de/",
+    "/de/patch-notes/",
     "/guide/",
     "/guide/beginner/",
     "/guide/tips/",
