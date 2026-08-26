@@ -7,7 +7,7 @@ import unittest
 import xml.etree.ElementTree as ET
 import re
 from pathlib import Path
-from urllib.parse import urljoin, urlparse
+from urllib.parse import urlparse
 
 
 SITE_DIR = Path(__file__).resolve().parents[1]
@@ -96,7 +96,11 @@ class SitemapTest(unittest.TestCase):
             )
             self.assertIsNotNone(match, f"{location} is missing a canonical link")
             assert match is not None
-            self.assertEqual(urljoin(location, match.group(1)), location)
+            self.assertEqual(
+                match.group(1),
+                location,
+                "canonical URLs must be absolute and match the sitemap URL exactly",
+            )
 
     def test_robots_txt_advertises_the_canonical_sitemap(self) -> None:
         robots = SITE_DIR / "robots.txt"
