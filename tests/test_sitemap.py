@@ -28,6 +28,7 @@ INDEXABLE_ROUTES = {
     "/characters/zuri/",
     "/classes/",
     "/classes/upgrades/",
+    "/codes/",
     "/demo/",
     "/de/",
     "/de/patch-notes/",
