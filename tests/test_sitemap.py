@@ -45,6 +45,8 @@ INDEXABLE_ROUTES = {
     "/patch-notes/",
     "/privacy/",
     "/release-date/",
+    "/ru/",
+    "/ru/builds/",
     "/terms/",
     "/tier-list/",
     "/tier-list/demo/",

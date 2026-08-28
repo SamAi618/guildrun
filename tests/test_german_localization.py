@@ -83,6 +83,8 @@ class GermanLocalizationTest(unittest.TestCase):
                 "de": german_url,
                 "x-default": english_url,
             }
+            if english_url == "https://guildrun.site/":
+                expected_alternates["ru"] = "https://guildrun.site/ru/"
             self.assertEqual(english.alternates, expected_alternates)
             self.assertEqual(german.alternates, expected_alternates)
             self.assertIn(german_url.removeprefix("https://guildrun.site"), english.links)
